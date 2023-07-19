@@ -1,0 +1,8 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "mounts": ["source=milua_modules,target=${containerWorkspaceFolder}/lua_modules,type=volume"],
+    "postCreateCommand": "sudo chown vscode lua_modules && luarocks make --tree lua_modules && luarocks path --tree lua_modules >> /home/vscode/.bashrc && echo 'alias luarocks=\"luarocks --tree lua_modules\"' >> /home/vscode/.bashrc",
+    "remoteUser": "vscode"
+}
