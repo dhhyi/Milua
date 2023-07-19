@@ -1,8 +1,7 @@
 package = "milua"
 version = "0.1-1"
 source = {
-   url = "git+https://github.com/MiguelMJ/Milua",
-   tag = "v0.1"
+   url = "git+https://github.com/dhhyi/Milua"
 }
 description = {
    summary = "Micro framework for web applications",
